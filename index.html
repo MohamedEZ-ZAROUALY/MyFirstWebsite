@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Moghreb Athletic Tetouan</title>
+        <link rel = "icon" href = "images/Moghreb_logo.svg.png"  type = "image/x-icon">
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <div id="logo">
+                        <img id="img1" src="images/Moghreb_logo.svg.png" alt="Logo MAT"  />
+                        <h1>MOGHREB ATHLETICO TETOUAN</h1> 
+                        <img id="img2" src="images/old_logo.jpg" alt="Old Logo MAT"  />   
+                    </div>
+                </div>
+                
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Album</a></li>
+                        <li><a href="timeline.html">Palmarès</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="banniere_image">
+                <div id="banniere_description">
+                    The fantastic supporters of the team ...
+                    <a href="#" class="bouton_rouge">Voir l'article <img src="images/flecheblanchedroite.png" alt="" /></a>
+                </div>
+            </div>
+            
+            <section>
+                <article>
+                    <h1><img src="images/ico_epingle.png" alt="Catégorie voyage" class="ico_categorie" />A GREAT NORTHERN CLUB</h1>
+                    <p>Moghreb Athlétic de Tétouan (Acronym MAT) is a Moroccan football club based in Tetouan. MA Tétouan was founded in 1922 and used to compete in the Spanish leagues under the names Athletic Club Tetuán (1922–1947) and Club Atlético de Tetuán (1947–1956) till 1956 when Morocco gained independence from Spain as the club made the transition to the Moroccan league after the club split in two forming Moghreb Atlético Tetuàn (Moroccan) and AD Ceuta FC (Spanish).</p>
+                    <p>In 1917, Tetouan saw the appearance of its first clubs of football, "Sporting of Tetuán" and "el Hispano-Marroquí" ("The Spanish-Moroccan"). One year later these two club, and a third one called "el Radio", merged and that gave the birth to the "Athletic Club Tetuán". The new club was established in 1922 by Basque Atlético Madrid fans who lived in Tetouan (Morocco). In the early days it was known as Athletic Club Tetuan—based on the Spanish spelling of the city. but after the Spanish Civil War and according to General Franco's demands (banning non-Spanish names) as Club Atlético Tetuan. That is why the team has always played in red and white stripes and blue shorts, just like the big brothers from Madrid they were supposed to emulate. Under Spanish Protectorate of Northern Morocco, Tetuán were a part of Spanish Liga for 33 years until independence was achieved in 1956. The highlight of that era was their surprising win of Spanish Segunda División (the southern group) in the 1950–51 season.[1] and promotion to the Primera Division of 1951–52, and the club remain, to this very day, the only African team ever to play in a top division in Europe.</p>
+                    <p>That was a season to remember. Tetuán's away form was dreadful—they lost 14 out of 15 games on their travels—but on home soil in Morocco they were a force to be reckoned with. Atlético were thrashed 4–1 in a rather weird "derby," and six more wins were achieved, while the mighty Real Madrid could only draw 3–3 on their visit to North Africa. Sadly that wasn't enough as Tetuán finished bottom of the table and were relegated, but such heritage has never been forgotten.</p>
+                </article>
+                <aside>
+                    <h1 >DID YOU KNOW THAT?</h1>
+                    <img src="images/bulle.png" alt="" id="fleche_bulle" />
+                    <p id="kit"><img  src="images/kit.jpg" alt="Kit of MAT" /></p>
+                    <p>The kit of the club which is a red and white shirt with blue shorts and socks is inspired of the colours of the club of Atletico Madrid. &nbsp;</p>
+                    <p>The inspiration came from the founders of the team who were some supporters of Atletico Madrid who settled in Tetouan during the period of the Spanish protectorate of Morocco.</p>
+                </aside>
+            </section>
+            
+            <footer>
+                <div id="website">
+                    <h1>Visit the official website</h1>
+                    <div>
+                        <img src="images/Website.png">
+                        <div>
+                            <a href="https://www.matfoot.com">www.matfoot.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="keep">
+                    <h1>Keep in touch</h1>
+                    <p><a href="https://facebook.com/Matfoot"><img src="images/facebook.png" alt="Facebook" /></a><a href="https://twitter.com/MATetuan"><img src="images/twitter.png" alt="Twitter" /></a><a href="https://www.instagram.com/moghrebatleticotetuan/"><img src="images/insta.png" alt="Instagram" /></a><a href="https://www.youtube.com/channel/MATTV1922"><img src="images/youtube.png" alt="youtube" /></a></p>
+                </div>
+                <div id="about">
+                    <h1>About</h1>
+                    <div>
+                        <img src="images/information.png">
+                        <div>
+                            <p>This page isn't the official page of the club, it is just a humble work of a fan of our Moghreb.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+
+            // Get the header
+            var header = document.getElementById("nav");
+
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            }
+        </script>
+    </body>
+</html>

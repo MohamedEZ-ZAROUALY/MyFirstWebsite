@@ -1,0 +1,348 @@
+p,label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+   /* background: url('images/fond_jaune.png');*/
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+    background-color: rgb(255, 255, 255);
+}
+
+#bloc_page
+{
+    width: 1200px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Header */
+
+header
+{
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: flex-end;*/
+    margin-bottom: 25px;
+}
+
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#img1
+{
+    width: 110px;
+    height: 100px;
+}
+
+#img2
+{
+    width: 75px;
+    height: 90px;
+    margin-left: 35px;
+}
+
+header
+{
+    padding-top: 15px;
+   /* border-radius: 0.5em;
+    border-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19; */
+}
+
+header h1
+{
+    font-family: Arial, Helvetica, serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    align-self: center;
+    background: url('images/separateur.png') repeat-x bottom;
+    background-color: #ffffff;
+  } 
+
+.sticky + section 
+  {
+    padding-top: 102px;
+  }
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+nav li:hover
+{
+    margin-right: 15px;
+    
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    border-radius: 0.5em;
+    padding : 10px 20px 10px 20px ;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+    background-color: #ff3e3e;
+    color: #e2d0d0;
+}
+
+
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    flex: 3;
+    border-radius: 1em;
+    border-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    background-color: rgb(247, 247, 247);
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 1em;
+}
+span
+{
+    color: rgb(172, 27, 27);
+}
+aside
+{
+    flex: 1.2;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 1em;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+form div
+{
+    background-color: #ff3e3e;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 1em;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+    margin: 10px 10px 10px 10px;
+}
+
+#titre_1,#titre_2
+{
+    color: rgb(255, 255, 255);
+    background-image: url('images/smoke.jpg');
+    background-size: 820px;
+    background-position: center;
+    font-size: 1.22em;
+    font-weight: bold;
+    border-radius: 0.5em;
+    padding: 35px;
+    margin: 10px 10px 10px 10px; 
+}
+
+form div p 
+{
+    color: rgb(0, 0, 0);
+    background-color: beige;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-radius: 0.5em;
+    box-shadow: 0px 2px 5px #1c1a19;
+    padding: 10px;
+    font-size: 1.1em;
+    margin: 10px 10px 10px 10px; 
+}
+
+input label 
+{
+    padding-left: 20px;
+}
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#kit
+{
+    text-align: center;
+}
+
+
+#photo_zozor img
+{
+    border: 1px solid #181818;
+}
+
+aside img
+{
+    margin-right: 5px;
+}
+
+aside h1
+{
+    text-align :center ;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+
+#website
+{
+    width: 33%;
+}
+
+#website div
+{
+    display: flex;
+    align-items: center;
+}
+
+#website div a
+{
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+#keep
+{
+    width: 33%;
+}
+
+#keep img
+{
+    margin-right: 5px;
+}
+
+#about 
+{
+    width: 31%;
+}
+
+#about div
+{
+    display: flex;
+    align-items: center;
+    margin-top: -7px;
+}
+
+#about div p
+{
+    font-size: 15px;
+    padding-left: 15px;
+}
